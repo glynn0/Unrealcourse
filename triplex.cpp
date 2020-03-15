@@ -11,7 +11,7 @@ int main()
     const int b = 3;
     const int c = 2;
     
-    // Hello
+    // Hello Tester
     
     const int sum = a + b + c;
     const int product = a * b * c;
