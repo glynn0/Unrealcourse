@@ -9,18 +9,13 @@ int main()
     std::cout << "You need to enter the correct codes to contirnue...";
     std::cout << std::endl;
 
-    // Declare 3 number code
-
+    // 
     const int a = 4;
     const int b = 3;
     const int c = 2;
 
-
-
     const int sum = a + b + c;
     const int product = a * b * c;
-
-    // Print Sum and Product to Terminal
 
     std::cout << sum << std::endl;;
      

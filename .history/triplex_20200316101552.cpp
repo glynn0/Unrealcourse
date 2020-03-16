@@ -15,13 +15,11 @@ int main()
     const int b = 3;
     const int c = 2;
 
-
-
     const int sum = a + b + c;
     const int product = a * b * c;
 
     // Print Sum and Product to Terminal
-
+    
     std::cout << sum << std::endl;;
      
     std::cout << product << std::endl;;
