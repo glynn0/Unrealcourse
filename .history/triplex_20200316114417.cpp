@@ -42,7 +42,7 @@ int main()
     }
     else
     {
-        std::cout << "You Lose!!!";
+        std::cout 
     }
     
     return 0;

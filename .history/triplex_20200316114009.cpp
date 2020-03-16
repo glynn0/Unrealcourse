@@ -36,13 +36,9 @@ int main()
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct = GuessA * GuessB * GuessC;
     
-    if (GuessSum == CodeSum && GuessProduct == CodeProduct)
+    if (GuessSum == Codes)
     {
         std::cout << "You Win!!!";
-    }
-    else
-    {
-        std::cout << "You Lose!!!";
     }
     
     return 0;

@@ -26,24 +26,6 @@ int main()
      
     std::cout << "+ The codes multiply to give " << CodeProduct << std::endl;;
     
-    int GuessA, GuessB, GuessC;
-
-    std::cin >> GuessA;
-    std::cin >> GuessB;
-    std::cin >> GuessC;
-
-    
-    int GuessSum = GuessA + GuessB + GuessC;
-    int GuessProduct = GuessA * GuessB * GuessC;
-    
-    if (GuessSum == CodeSum && GuessProduct == CodeProduct)
-    {
-        std::cout << "You Win!!!";
-    }
-    else
-    {
-        std::cout << "You Lose!!!";
-    }
-    
+    int PlayerGuess
     return 0;
 }

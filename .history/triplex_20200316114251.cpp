@@ -40,10 +40,6 @@ int main()
     {
         std::cout << "You Win!!!";
     }
-    else
-    {
-        std::cout << "You Lose!!!";
-    }
     
     return 0;
 }

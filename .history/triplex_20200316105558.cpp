@@ -32,18 +32,9 @@ int main()
     std::cin >> GuessB;
     std::cin >> GuessC;
 
-    
+    std::cout << "You entered " << GuessA << GuessB << GuessC;
+
     int GuessSum = GuessA + GuessB + GuessC;
-    int GuessProduct = GuessA * GuessB * GuessC;
-    
-    if (GuessSum == CodeSum && GuessProduct == CodeProduct)
-    {
-        std::cout << "You Win!!!";
-    }
-    else
-    {
-        std::cout << "You Lose!!!";
-    }
-    
+    int Guess
     return 0;
 }
