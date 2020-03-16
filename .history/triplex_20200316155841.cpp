@@ -1,5 +1,4 @@
-#include <iostream> // Allow input and output 
-#include <ctime> // Allow access to time functions
+#include <iostream>
 
 void PrintIntroduction(int Difficulty)
 {
@@ -17,9 +16,9 @@ bool PlayGame(int Difficulty)
 
     // Declare 3 number code
 
-    const int CodeA = rand() % Difficulty + Difficulty;
-    const int CodeB = rand() % Difficulty + Difficulty;
-    const int CodeC = rand() % Difficulty + Difficulty;
+    const int CodeA = rand() % Difficulty + 1;
+    const int CodeB = rand() % Difficulty ;
+    const int CodeC = rand() % Difficulty;
 
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
@@ -62,8 +61,6 @@ bool PlayGame(int Difficulty)
 
 int main()
 {
-    srand(time(NULL)); // Create random sequence based on time of day
-
     int LevelDifficulty = 1;
     const int MaxDifficulty = 5;
 

@@ -1,5 +1,5 @@
-#include <iostream> // Allow input and output 
-#include <ctime> // Allow access to time functions
+#include <iostream>
+#include <ctime>
 
 void PrintIntroduction(int Difficulty)
 {
@@ -62,8 +62,7 @@ bool PlayGame(int Difficulty)
 
 int main()
 {
-    srand(time(NULL)); // Create random sequence based on time of day
-
+    
     int LevelDifficulty = 1;
     const int MaxDifficulty = 5;
 

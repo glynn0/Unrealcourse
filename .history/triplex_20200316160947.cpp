@@ -1,5 +1,5 @@
-#include <iostream> // Allow input and output 
-#include <ctime> // Allow access to time functions
+#include <iostream>
+#include <ctime>
 
 void PrintIntroduction(int Difficulty)
 {

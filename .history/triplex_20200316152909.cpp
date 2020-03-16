@@ -1,5 +1,4 @@
-#include <iostream> // Allow input and output 
-#include <ctime> // Allow access to time functions
+#include <iostream>
 
 void PrintIntroduction(int Difficulty)
 {
@@ -17,9 +16,9 @@ bool PlayGame(int Difficulty)
 
     // Declare 3 number code
 
-    const int CodeA = rand() % Difficulty + Difficulty;
-    const int CodeB = rand() % Difficulty + Difficulty;
-    const int CodeC = rand() % Difficulty + Difficulty;
+    const int CodeA = 4;
+    const int CodeB = 3;
+    const int CodeC = 2;
 
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
@@ -48,13 +47,11 @@ bool PlayGame(int Difficulty)
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
         std::cout << "You Win!!!\n";
-        std::cout << "Moving on to next Level \n";
         return(true);
     }
     else
     {
         std::cout << "You Lose!!!\n";
-        std::cout << "Retrying Level \n";
         return(false);
     }
     
@@ -62,14 +59,11 @@ bool PlayGame(int Difficulty)
 
 int main()
 {
-    srand(time(NULL)); // Create random sequence based on time of day
-
     int LevelDifficulty = 1;
-    const int MaxDifficulty = 5;
-
-    while (LevelDifficulty <= MaxDifficulty) // Loop game until all levels are completed
+    int MaxLevel = 10;
+    
+    while (true) // Loop game until all levels are completed
     {
-        
         bool bLevelComplete = PlayGame(LevelDifficulty);
         std::cin.clear(); // Clears any errors
         std::cin.ignore(); // Discards the buffer
@@ -77,12 +71,9 @@ int main()
         if (bLevelComplete)
         {
             ++LevelDifficulty;
-            
         }
         
     }
-
-    std::cout << "Congratulations YOU WON the GAME !! \n";
     
     return 0;
 }
