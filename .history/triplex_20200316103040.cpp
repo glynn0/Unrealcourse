@@ -26,7 +26,7 @@ int main()
     std::cout << "There are 3 numbers in the code" << std::endl;
     std::cout << "The codes add up to " << sum << std::endl;
      
-    std::cout << "The codes multiply to give " << product << std::endl;;
+    std::cout << "The product of these numbers is " << product << std::endl;;
     
     return 0;
 }
