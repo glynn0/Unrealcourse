@@ -59,7 +59,7 @@ bool PlayGame(int Difficulty)
 
 int main()
 {
-    int LevelDifficulty = 1;
+    
     while (true)
     {
         

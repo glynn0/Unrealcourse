@@ -9,10 +9,10 @@ void PrintIntroduction(int Difficulty)
     std::cout << "---------------------------------------------------------\n";
 }
 
-bool PlayGame(int Difficulty)
+bool PlayGame()
 {
     
-   PrintIntroduction(Difficulty);
+   PrintIntroduction();
 
     // Declare 3 number code
 
@@ -59,12 +59,12 @@ bool PlayGame(int Difficulty)
 
 int main()
 {
-    int LevelDifficulty = 1;
+    
     while (true)
     {
-        
+        int LevelDifficulty = 1;
 
-        bool bLevelComplete = PlayGame(LevelDifficulty);
+        bool bLevelComplete = PlayGame();
         std::cin.clear(); // Clears any errors
         std::cin.ignore(); // Discards the buffer
 

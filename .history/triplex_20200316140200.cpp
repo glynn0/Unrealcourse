@@ -59,12 +59,12 @@ bool PlayGame(int Difficulty)
 
 int main()
 {
-    int LevelDifficulty = 1;
+    
     while (true)
     {
-        
+        int LevelDifficulty = 1;
 
-        bool bLevelComplete = PlayGame(LevelDifficulty);
+        bool bLevelComplete = PlayGame();
         std::cin.clear(); // Clears any errors
         std::cin.ignore(); // Discards the buffer
 

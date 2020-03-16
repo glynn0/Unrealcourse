@@ -1,18 +1,19 @@
 #include <iostream>
 
-void PrintIntroduction(int Difficulty)
+void PrintIntroduction()
 {
     // Output story lines to Terminal
     std::cout << "---------------------------------------------------------\n";
-    std::cout << "You are a secret agent breaking into a Level " << Difficulty;
-    std::cout << " secure server room\nYou need to enter the correct codes to continue...\n";
+    std::cout << "You are a secret agent breaking into a secure server room\n";
+    
+    std::cout << "You need to enter the correct codes to continue...\n";
     std::cout << "---------------------------------------------------------\n";
 }
 
-bool PlayGame(int Difficulty)
+void PlayGame()
 {
     
-   PrintIntroduction(Difficulty);
+   
 
     // Declare 3 number code
 
@@ -29,12 +30,12 @@ bool PlayGame(int Difficulty)
     std::cout << "+ There are 3 numbers in the code\n" ;
     std::cout << "+ The codes add up to " << CodeSum << "\n";
      
-    std::cout << "+ The codes multiply to give " << CodeProduct << "\n\n";
+    std::cout << "+ The codes multiply to give " << CodeProduct << "\n";
     
     // Store Player Guess
 
     int GuessA, GuessB, GuessC;
-    std::cout << "Please Enter your Code --> ";
+
     std::cin >> GuessA >> GuessB >> GuessC;
     
 
@@ -47,33 +48,17 @@ bool PlayGame(int Difficulty)
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
         std::cout << "You Win!!!\n";
-        return(true);
     }
     else
     {
         std::cout << "You Lose!!!\n";
-        return(false);
     }
     
 }
 
 int main()
 {
-    int LevelDifficulty = 1;
-    while (true)
-    {
-        
-
-        bool bLevelComplete = PlayGame(LevelDifficulty);
-        std::cin.clear(); // Clears any errors
-        std::cin.ignore(); // Discards the buffer
-
-        if (bLevelComplete)
-        {
-            ++LevelDifficulty;
-        }
-        
-    }
-    
+    PrintIntroduction();
+    PlayGame();
     return 0;
 }

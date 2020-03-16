@@ -1,18 +1,18 @@
 #include <iostream>
 
-void PrintIntroduction(int Difficulty)
+void PrintIntroduction()
 {
     // Output story lines to Terminal
     std::cout << "---------------------------------------------------------\n";
-    std::cout << "You are a secret agent breaking into a Level " << Difficulty;
-    std::cout << " secure server room\nYou need to enter the correct codes to continue...\n";
+    std::cout << "You are a secret agent breaking into a secure server room\n";
+    std::cout << "You need to enter the correct codes to continue...\n";
     std::cout << "---------------------------------------------------------\n";
 }
 
-bool PlayGame(int Difficulty)
+bool PlayGame()
 {
     
-   PrintIntroduction(Difficulty);
+   PrintIntroduction();
 
     // Declare 3 number code
 
@@ -59,20 +59,14 @@ bool PlayGame(int Difficulty)
 
 int main()
 {
-    int LevelDifficulty = 1;
+    
     while (true)
     {
-        
+        bool bLevelComplete = PlayGame();
 
-        bool bLevelComplete = PlayGame(LevelDifficulty);
+        
         std::cin.clear(); // Clears any errors
         std::cin.ignore(); // Discards the buffer
-
-        if (bLevelComplete)
-        {
-            ++LevelDifficulty;
-        }
-        
     }
     
     return 0;
