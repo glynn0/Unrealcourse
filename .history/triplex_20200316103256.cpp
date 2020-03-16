@@ -11,22 +11,22 @@ int main()
 
     // Declare 3 number code
 
-    const int CodeA = 4;
-    const int CodeB = 3;
-    const int CodeC = 2;
+    const int a = 4;
+    const int b = 3;
+    const int c = 2;
 
 
 
-    const int CodeSum = CodeA + CodeB + CodeC;
-    const int CodeProduct = CodeA * CodeB * CodeC;
+    const int sum = a + b + c;
+    const int product = a * b * c;
 
     // Print Sum and Product to Terminal
 
     std::cout << std::endl;
     std::cout << "+ There are 3 numbers in the code" << std::endl;
-    std::cout << "+ The codes add up to " << CodeSum << std::endl;
+    std::cout << "+ The codes add up to " << sum << std::endl;
      
-    std::cout << "+ The codes multiply to give " << CodeProduct << std::endl;;
+    std::cout << "+ The codes multiply to give " << product << std::endl;;
     
     return 0;
 }

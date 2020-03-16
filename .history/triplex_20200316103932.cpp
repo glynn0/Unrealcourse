@@ -24,9 +24,9 @@ int main()
 
     std::cout << std::endl;
     std::cout << "+ There are 3 numbers in the code" << std::endl;
-    std::cout << "+ The codes add up to " << CodeSum << std::endl;
+    std::cout << "+ The codes add up to " << sum << std::endl;
      
-    std::cout << "+ The codes multiply to give " << CodeProduct << std::endl;;
+    std::cout << "+ The codes multiply to give " << product << std::endl;;
     
     return 0;
 }
