@@ -1,18 +1,13 @@
 #include <iostream>
 
-void PrintIntroduction()
+int main()
 {
     // Output story lines to Terminal
 
-    std::cout << "You are a secret agent breaking into a secure server room\n";
-    
-    std::cout << "You need to enter the correct codes to continue...\n";
-}
-
-void PlayGame()
-{
-    
-   
+    std::cout << "You are a secret agent breaking into a secure server room";
+    std::cout << std::endl;
+    std::cout << "You need to enter the correct codes to continue...";
+    std::cout << std::endl;
 
     // Declare 3 number code
 
@@ -26,38 +21,30 @@ void PlayGame()
     // Print CodeSum and CodeProduct to Terminal
 
     std::cout << std::endl;
-    std::cout << "+ There are 3 numbers in the code\n" ;
-    std::cout << "+ The codes add up to " << CodeSum << "\n";
+    std::cout << "+ There are 3 numbers in the code" << std::endl;
+    std::cout << "+ The codes add up to " << CodeSum << std::endl;
      
-    std::cout << "+ The codes multiply to give " << CodeProduct << "\n";
+    std::cout << "+ The codes multiply to give " << CodeProduct << std::endl;;
     
     // Store Player Guess
 
     int GuessA, GuessB, GuessC;
 
-    std::cin >> GuessA >> GuessB >> GuessC;
+    std::cin >> GuessA >> GuessB >> Guess;
     
 
     
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct = GuessA * GuessB * GuessC;
     
-    // Check to see if the players guess is correct
-
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-        std::cout << "You Win!!!\n";
+        std::cout << "You Win!!!";
     }
     else
     {
-        std::cout << "You Lose!!!\n";
+        std::cout << "You Lose!!!";
     }
     
-}
-
-int main()
-{
-    PrintIntroduction();
-    PlayGame();
     return 0;
 }

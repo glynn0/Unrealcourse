@@ -1,17 +1,12 @@
 #include <iostream>
 
-void PrintIntroduction()
+int main()
 {
     // Output story lines to Terminal
 
     std::cout << "You are a secret agent breaking into a secure server room\n";
     
     std::cout << "You need to enter the correct codes to continue...\n";
-}
-
-void PlayGame()
-{
-    
    
 
     // Declare 3 number code
@@ -27,9 +22,9 @@ void PlayGame()
 
     std::cout << std::endl;
     std::cout << "+ There are 3 numbers in the code\n" ;
-    std::cout << "+ The codes add up to " << CodeSum << "\n";
+    std::cout << "+ The codes add up to \n" << CodeSum ;
      
-    std::cout << "+ The codes multiply to give " << CodeProduct << "\n";
+    std::cout << "+ The codes multiply to give \n" << CodeProduct << "\n";
     
     // Store Player Guess
 
@@ -50,14 +45,8 @@ void PlayGame()
     }
     else
     {
-        std::cout << "You Lose!!!\n";
+        std::cout << "You Lose!!!";
     }
     
-}
-
-int main()
-{
-    PrintIntroduction();
-    PlayGame();
     return 0;
 }

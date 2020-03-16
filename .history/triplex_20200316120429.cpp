@@ -1,17 +1,15 @@
 #include <iostream>
 
 void PrintIntroduction()
+
+
+void PlayGame()
 {
     // Output story lines to Terminal
 
     std::cout << "You are a secret agent breaking into a secure server room\n";
     
     std::cout << "You need to enter the correct codes to continue...\n";
-}
-
-void PlayGame()
-{
-    
    
 
     // Declare 3 number code
@@ -57,7 +55,6 @@ void PlayGame()
 
 int main()
 {
-    PrintIntroduction();
     PlayGame();
     return 0;
 }

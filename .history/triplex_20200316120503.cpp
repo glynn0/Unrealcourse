@@ -2,7 +2,7 @@
 
 void PrintIntroduction()
 {
-    // Output story lines to Terminal
+// Output story lines to Terminal
 
     std::cout << "You are a secret agent breaking into a secure server room\n";
     
@@ -57,7 +57,7 @@ void PlayGame()
 
 int main()
 {
-    PrintIntroduction();
+    PrintIntroduction
     PlayGame();
     return 0;
 }
