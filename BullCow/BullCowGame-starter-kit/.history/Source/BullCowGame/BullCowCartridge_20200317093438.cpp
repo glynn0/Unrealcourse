@@ -8,7 +8,7 @@ void UBullCowCartridge::BeginPlay() // When the game starts
 
     Super::BeginPlay();
     PrintLine(TEXT("Welcome to my Bull Cows Game"));
-    PrintLine(TEXT("Guess the 4 letter word"));
+    PrintLine(TEXT("Guess"));
     PrintLine(TEXT("Input your name and Press ENTER"));
     
 }

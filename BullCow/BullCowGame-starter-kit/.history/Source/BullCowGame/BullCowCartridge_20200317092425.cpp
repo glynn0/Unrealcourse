@@ -8,7 +8,6 @@ void UBullCowCartridge::BeginPlay() // When the game starts
 
     Super::BeginPlay();
     PrintLine(TEXT("Welcome to my Bull Cows Game"));
-    PrintLine(TEXT("Guess the 4 letter word"));
     PrintLine(TEXT("Input your name and Press ENTER"));
     
 }
@@ -18,18 +17,8 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
     
     ClearScreen();
     FString HiddenWord = TEXT("cake");
-    PrintLine(Input);
+    PrintLine(;
 
-    if (Input == HiddenWord)
-    {
-        PrintLine (TEXT("You Win"));
-    }
-    else
-    {
-        PrintLine (TEXT("You Lose"));
-    }
-    
-    
     
     
 }
