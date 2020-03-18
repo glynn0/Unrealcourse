@@ -19,7 +19,6 @@ public:
 	// Your declarations go below!
 private:
 
-	FString HiddenWord;
-	
+	FS
 	int32 Lives;
 };

@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#inaclude "CoreMinimal.h"
 #include "Console/Cartridge.h"
 #include "BullCowCartridge.generated.h"
 
@@ -20,6 +20,5 @@ public:
 private:
 
 	FString HiddenWord;
-	
 	int32 Lives;
 };

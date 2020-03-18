@@ -6,7 +6,6 @@ void UBullCowCartridge::BeginPlay() // When the game starts
 
     Super::BeginPlay();
 
-
     // Welcome the Player
 
     PrintLine(TEXT("Welcome to my Bull Cows Game"));
@@ -22,7 +21,11 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
 {
 
     ClearScreen();
-    
+
+    if ( )
+
+    PrintLine(Input);
+
     if (Input == HiddenWord)
     {
         PrintLine(TEXT("You Win"));
