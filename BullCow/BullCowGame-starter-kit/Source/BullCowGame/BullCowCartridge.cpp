@@ -6,14 +6,13 @@ void UBullCowCartridge::BeginPlay() // When the game starts
 
     Super::BeginPlay();
 
-
+    SetupGame();
     // Welcome the Player
 
     PrintLine(TEXT("Welcome to my Bull Cows Game"));
     PrintLine(TEXT("Guess the 4 letter word"));
+    PrintLine(FString::Printf(TEXT("The codeword is %s"), *HiddenWord));
     PrintLine(TEXT("Input your name and Press ENTER"));
-
-    SetupGame(); 
 
     // Prompt Player for Guess
 }
@@ -22,13 +21,18 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
 {
 
     ClearScreen();
-    
+
     if (Input == HiddenWord)
     {
         PrintLine(TEXT("You Win"));
     }
     else
     {
+        if (Input.Len() != HiddenWord.Len())
+        {
+            PrintLine(TEXT("The Hidden Word is 4 Characters Long"));
+        }
+
         PrintLine(TEXT("You Lose"));
     }
     // Check if IsoGram

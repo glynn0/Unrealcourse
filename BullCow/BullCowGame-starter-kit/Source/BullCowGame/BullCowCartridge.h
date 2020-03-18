@@ -20,6 +20,6 @@ public:
 private:
 
 	FString HiddenWord;
-	
 	int32 Lives;
+
 };
