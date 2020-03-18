@@ -11,16 +11,17 @@ void UBullCowCartridge::BeginPlay() // When the game starts
 
     PrintLine(TEXT("Welcome to my Bull Cows Game"));
     PrintLine(TEXT("Guess the 4 letter word"));
-    PrintLine(FString::Printf(TEXT("The codeword is %s"), *HiddenWord));
+    PrintLine(TEXT("The codeword is --> %s"), *HiddenWord);
     PrintLine(TEXT("Input your name and Press ENTER"));
-
     // Prompt Player for Guess
-}
+  
+}  
 
 void UBullCowCartridge::OnInput(const FString &Input) // When the player hits enter
 {
 
     ClearScreen();
+
 
     if (Input == HiddenWord)
     {
