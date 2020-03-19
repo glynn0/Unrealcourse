@@ -15,11 +15,14 @@ public:
 	virtual void BeginPlay() override;
 	virtual void OnInput(const FString &Input) override;
 	void SetupGame();
+	void EndGame();
+	void ProcessGuess(FString Guess);
 
+	
 	// Your declarations go below!
 private:
 
 	FString HiddenWord;
 	int32 Lives;
-
+	bool bGameOver;
 };
