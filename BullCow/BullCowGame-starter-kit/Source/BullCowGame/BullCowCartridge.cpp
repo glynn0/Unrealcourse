@@ -8,21 +8,17 @@ void UBullCowCartridge::BeginPlay() // When the game starts
 
     SetupGame();
     // Welcome the Player
-
+    // PrintLine(TEXT("The codeword is --> %s\nIt is %i characters long"), *HiddenWord, HiddenWord.Len());
     PrintLine(TEXT("Welcome to my Bull Cows Game"));
-    PrintLine(TEXT("Guess the 4 letter word"));
-    PrintLine(TEXT("The codeword is --> %s"), *HiddenWord);
-    PrintLine(TEXT("Input your name and Press ENTER"));
+    PrintLine(TEXT("Guess the %i letter word"), HiddenWord.Len());
+    PrintLine(TEXT("Input your guess and Press ENTER"));
     // Prompt Player for Guess
-  
+
 }  
 
 void UBullCowCartridge::OnInput(const FString &Input) // When the player hits enter
 {
-
     ClearScreen();
-
-
     if (Input == HiddenWord)
     {
         PrintLine(TEXT("You Win"));
@@ -31,7 +27,7 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
     {
         if (Input.Len() != HiddenWord.Len())
         {
-            PrintLine(TEXT("The Hidden Word is 4 Characters Long"));
+            PrintLine(TEXT("The Hidden Word is %i Characters Long"), HiddenWord.Len());
         }
 
         PrintLine(TEXT("You Lose"));
@@ -41,7 +37,6 @@ void UBullCowCartridge::OnInput(const FString &Input) // When the player hits en
     // Check Right number of Characters
     // Prompt to Guess Again
     // Remove Life
-
     // Check if Lives > 0
     // If Yes, GuessAgain
     // Show LivesLeft
